@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everyclick Detail</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/detailfavi.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+  <div class="detailpage everydetail">
+    <!-- background effect -->
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <div id='stars4'></div>
+
+    <!-- content -->
+    <div class="section">
+      <div class="detailIn">
+        <h1>에브리클릭</h1>
+        <p>모바일 캐시적립 어플 랜딩페이지 </p>
+        <ul>
+          <li>#HTML</li>
+          <li>#CSS</li>
+          <li>#Javascript</li>
+          <li>#Swiper</li>
+          <li>#animation</li>
+          <li>#aos</li>
+          <li>#Dark mode</li>
+          <li>#Light mode</li>
+          <li>#All Devices</li>
+          <li>#기여도 100%</li>
+          <li>#Photoshop</li>
+        </ul>
+        <div class="swiper-container02">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/every01.png" alt="quizmongmain" class="mainImg">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/every_darkRe.png" alt="quizmongmain" class="mainImg">
+              </div>
+          </div>
+          <!-- <div class="swiperArr swiperArr08">
+            <div class="swiper-button-prev button-prev08"></div>
+            <div class="swiper-button-next button-next08"></div>
+          </div> -->
+        </div>
+        <div class="gotoSiteBtn">
+          <a href="https://www.everyclick.io/landing/" class="gotosite">실제 사이트 바로가기 </a>
+          <a href="https://byeon-seong-won.github.io/pub_landing_exp/" class="gotosite">작업한 버전 바로가기</a>
+        </div>
+        <h2>OverView.</h2>
+        <p class="bold">※ swiper(horizontal) + circle progress.js + css animation</p>
+        <p>
+          전체 페이지를 Swiper 라이브러리를 이용해 섹션 별로 부드럽게 전환될 수 있도록 풀페이지 효과를 주었습니다. 
+          섹션 전환 시 circle progress bar와 애니메이션 효과, swiper 효과가 실행되도록 스크립트를 사용하였고, 
+          반응형일 경우 scrollTop 값과 브라우저 창의 가로 값과 세로 값을 이용해 변경될 수 있도록 작업하였습니다. 
+          또한 접근성을 위해 다크 모드로 설정되었을 경우를 고려하여 색상에 반전을 주며 가독성에 유의하였습니다.
+        </p>
+        <h2>Service Info.</h2>
+        <p>
+          <span class="mark">01. section 01</span> <br>
+          - css 애니메이션을 이용해 background가 점점 커지는 애니메이션 구현 <br>
+          - aos 라이브러리를 이용해 이미지가 fade-in되는 애니메이션 구현 <br>
+          - swiper 슬라이드의 slideChange 메서드를 이용해 activeIndex에 들어올 경우 addclass를 이용해 애니메이션을 실행하도록 구현 <br> 
+          - 해당 activeIndex에 벗어난 경우 removeClass를 이용해 애니메이션을 초기화 <br><br>
+        </p> 
+        <p>
+          <span class="mark">02. section 02</span> <br>
+          - circle progress 라이브러리를 이용해 전환되는 시점에 progress bar를 특정 범위까지 채우는 애니메이션 구현 <br>
+          - swiper 슬라이드의 slideChange 메서드를 이용해 activeIndex에 들어올 경우 해당 circle progress 스크립트가 실행되도록 구현<br><br>
+        </p> 
+        <p>
+          <span class="mark">03. section 03</span> <br>
+          - css애니메이션을 이용해 손 이미지가 아이콘을 클릭시 동전이 움직이고, 숫자가 "503" 까지 올라가도록 애니메이션 구현 <br>
+          - 슬라이드 전환시 숫자는 "500"으로 초기화되도록 구현 <br>
+          - swiper 슬라이드의 slideChange 메서드를 이용해 activeIndex에 들어올 경우 addclass를 이용해 애니메이션을 실행하도록 구현 <br> 
+          - 해당 activeIndex에 벗어난 경우 removeClass를 이용해 애니메이션을 초기화 <br><br>
+        </p> 
+        <p>
+          <span class="mark">04. section 04</span> <br>
+          - swiper를 이용해 브랜드 이미지가 자동으로 슬라이드 되도록 구현 <br><br>
+        </p>
+        <h2>Devices.</h2>
+        <img src="img/every01.png" alt="every01" class="mapImg">
+        <h2 class="last">Work Info.</h2>
+        <div class="workinfo">
+          <ul>
+            <li>제작 기간</li>
+            <li>2023.08.21 ~ 2023.08.31(8days)</li>
+          </ul>
+          <ul>
+            <li>제작 영역</li>
+            <li>사이트 전반 구현</li>
+          </ul>
+          <ul>
+            <li>사용 툴</li>
+            <li>HTML, CSS, Javascript, Git, Photoshop</li>
+          </ul>
+        </div>
+    </div>
+  </div>
+  <div class="cursor">
+    <div class="blob"></div>
+  </div>
+
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.js"></script>
+  <script src="js/commom.js"></script>
+  <script>
+
+  var swiper2 = new Swiper('.swiper-container02', {
+      loop : true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      freeMode: false,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      effect : 'fade', 
+      fadeEffect: 
+      { crossFade: true },
+  }); 
+
+
+  </script>
+</body>
+</html>

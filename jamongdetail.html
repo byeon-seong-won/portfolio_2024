@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamong Detail</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/detailfavi.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+  
+  <div class="detailpage">
+    <!-- background effect -->
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <div id='stars4'></div>
+
+    <!-- content -->
+    <div class="section">
+      <div class="detailIn">
+        <h1>자몽랩</h1>
+        <p>교육 서비스 홈페이지</p>
+        <ul>
+          <li>#HTML</li>
+          <li>#CSS</li>
+          <li>#Javascript</li>
+          <li>#Fullpage</li>
+          <li>#GSAP</li>
+          <li>#Canvas API</li>
+          <li>#swiper</li>
+          <li>#animation</li>
+          <li>#4pages</li>
+          <li>#All Devices</li>
+          <li>#기여도 100%</li>
+          <li>#Photoshop</li>
+          <li>#Figma</li>
+        </ul>
+        <img src="img/jamong_main.jpg" alt="erundg" class="mainImg">
+        <div class="gotoSiteBtn">
+          <a href="http://jamonglab.com/test/" class="gotosite">실제 사이트 바로가기</a>
+          <a href="https://byeon-seong-won.github.io/jamong_home" class="gotosite">작업한 버전 바로가기</a>
+        </div>
+        <h2>OverView.</h2>
+        <p class="bold">※ fullpage.js(2.9.7) + swiper + gsap + canvas api + css animation</p>
+        <p>
+          전체 페이지를 fullpage(2.9.7 무료버전)을 이용해 섹션 별로 부드럽게 전환될 수 있도록 효과를 주었습니다. 
+          각 섹션 별로 전환시 gsap과 css 애니메이션 효과, swiper 효과를 함께 구현하여 텍스트가 강조될 수 있도록 하였고, 
+          swiper와 fullpage를 함께 사용하는 인트로의 경우, <br> 
+          swiper의 마지막 슬라이드까지 전환되지 않은 경우 fullpage 스크롤과 모바일 touchmove를 disable하여 fullpage섹션이 전환되지 않도록 구현하였습니다.<br>
+          또한, 브라우저 창이 resize될 때마다 특정 시간 후 새로고침 되도록 스크립트를 이용해 타이머를 설정하였습니다.
+        </p>
+        <h2>Service Info.</h2>
+        <h3 class="mark subtitle">
+          <span class="xi-check-min"></span>메인페이지 (fullpage)
+        </h3>
+        <p>
+          01. section 01 <br>
+          - background : canvas api 이용해 구현 <br>
+          - css 애니메이션을 이용해 텍스트 background 블락 효과 구현 <br>
+          - swiper(horizontal scroll) + gsap을 함께 사용해 2번 슬라이드를 넘기는 시점에 텍스트가 등장하며 background 블락이 사라지는 애니메이션 구현 <br>
+          - swiper의 슬라이드 개수만큼 전환되지 않은 경우 fullpage 스크롤과 touchmove disable 구현<br>
+          - swiper의 슬라이드가 모두 전환 된 후 fullpage 스크롤과 touchmove enable 구현 <br><br>
+        </p> 
+        <p>
+          02. section 02 <br>
+          - 우측 이미지 : 이미지 회전하는 animation과 canvas api 결합해 구현 <br>
+          - css 애니메이션을 이용해 텍스트 background 블락 효과 구현 <br>
+          - fullpage의 해당 section이 active가 되는 시점에 텍스트가 위로 움직이도록 애니메이션 구현 <br>
+          - fullpage 의 onLeave와 afterLoad 메서드를 이용해 해당 index에 들어올 경우 addclass를 이용해 애니메이션을 실행하도록 구현 <br> 
+          - 해당 index를 벗어난 경우 removeClass를 이용해 애니메이션을 초기화<br><br>
+        </p> 
+        <p>
+          03. section 03 <br>
+          - css 애니메이션을 이용해 텍스트 background 블락 효과 구현 <br>
+          - 태블릿 이하(1025px)부터는 컨텐츠를 swiper 슬라이드로 2개씩 구현 <br>
+          - 모바일 (561px)부터는 컨텐츠를 swiper 슬라이드로 1개씩 나오도록 구현 <br>
+          - fullpage 의 onLeave와 afterLoad 메서드를 이용해 해당 index에 들어올 경우 addclass를 이용해 애니메이션을 실행하도록 구현 <br> 
+          - 해당 index를 벗어난 경우 removeClass를 이용해 애니메이션을 초기화
+        </p> 
+        <p>
+          04. section 04 <br>
+          - css 애니메이션을 이용해 텍스트 background 블락 효과 구현 <br>
+          - fullpage의 function에서 index를 이용해 해당 페이지에 올 때 addclass를 이용해
+          애니메이션을 실행하게 하고, 벗어나면 removeClass를 이용해 애니메이션 초기화 <br>
+          - top 버튼 클릭시 "$.fn.fullpage.moveTo(1);swiper1.slideTo(0);" 이용해 메인 첫 슬라이드로 이동<br><br>
+        </p>
+        <h3 class="mark">
+          <span class="xi-check-min"></span>서브페이지 (fullpage)
+        </h3>
+        <p>
+          01. 메인 <br>
+          - swiper(horizontal scroll)을 사용해 2번 슬라이드를 넘기는 시점에 텍스트가 등장하며 background 블락이 사라지는 애니메이션 구현 <br>
+          - swiper의 슬라이드 개수만큼 전환되지 않은 경우 fullpage 스크롤과 touchmove disable 구현<br>
+          - swiper의 슬라이드가 모두 전환 된 후 fullpage 스크롤과 touchmove enable 구현<br><br>
+        </p>
+        <p>
+          02. 컨텐츠 영역 <br>
+          - swiper(horizontal scroll)사용해 슬라이드를 넘기는 시점에 텍스트가 등장하며 background 블락이 사라지는 애니메이션 +
+          swiper(horizontal scroll) + css 애니메이션을 함께 사용해 슬라이드를 넘기는 시점에 우측 이미지가 서서히 등장하는 애니메이션(각각 delay 설정) 구현 <br> 
+          - 큰 타이틀과 하단 버튼은 absolute로 고정시킨 후 우측 이미지와 작은 타이틀만 전환되도록 레이아웃 설정
+        </p>
+        <h2>Devices.</h2>
+        <img src="img/jamong.png" alt="every01" class="mapImg">
+        <h2 class="last">Work Info.</h2>
+        <div class="workinfo">
+          <ul>
+            <li>제작 기간</li>
+            <li>2023.12.27 ~ 2024.01.17 (21days)</li>
+          </ul>
+          <ul>
+            <li>제작 영역</li>
+            <li>사이트 전반 구현</li>
+          </ul>
+          <ul>
+            <li>사용 툴</li>
+            <li>HTML, CSS, Javascript, Figma, Photoshop, Git</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cursor">
+    <div class="blob"></div>
+  </div>
+
+
+<script src="js/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.js"></script>
+<script src="js/commom.js"></script>
+</body>
+</html>
